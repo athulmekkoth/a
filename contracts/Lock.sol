@@ -12,7 +12,7 @@ contract abc{
     {
         owner=payable(msg.sender);
     }
-    function  buy(string memory name,string memory message) public payable{
+    function  buychai(string memory name,string memory message) public payable{
         require(msg.value>0,"please try again");
         owner.transfer(msg.value);
 memo.push(Memo(name,message,block.timestamp,msg.sender));
